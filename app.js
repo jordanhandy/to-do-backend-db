@@ -1,9 +1,10 @@
+require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const _ = require("lodash");
 mongoose.set('useFindAndModify', false);
-let port = 3000;
+let port = 3000 || process.env.PORT;
 
 const app = express();
 
@@ -16,7 +17,7 @@ app.use(express.static("public"));
 
 // Connect Mongoose
 // Remove deprecation warnings
-mongoose.connect("mongodb+srv://admin-jordan:pWbok9PEqWSpDre8@todolistcluster-zynix.mongodb.net/todolistDB", {
+mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useFindAndModify: true

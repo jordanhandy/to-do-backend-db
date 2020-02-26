@@ -7,12 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jordan Handy",
-"engines":{
-"node": "12.14.1"
-},
+  "engines": {
+    "node": "12.14.1"
+  },
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "dotenv": "^8.2.0",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
     "lodash": "^4.17.15",
