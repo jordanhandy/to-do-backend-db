@@ -1,6 +1,6 @@
-//jshint esversion:6
+// Date manipulator module.
 
-exports.getDate = function() {
+module.exports.getDate = function() {
 
   const today = new Date();
 
@@ -12,9 +12,9 @@ exports.getDate = function() {
 
   return today.toLocaleDateString("en-US", options);
 
-};
+}
 
-exports.getDay = function () {
+module.exports.getDay = function () {
 
   const today = new Date();
 
@@ -24,4 +24,4 @@ exports.getDay = function () {
 
   return today.toLocaleDateString("en-US", options);
 
-};
+}
