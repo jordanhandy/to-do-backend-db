@@ -1,5 +1,5 @@
 {
-  "name": "To Do List",
+  "name": "To-Do-List",
   "version": "1.0.0",
   "description": "To Do List Application",
   "main": "app.js",
@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "dotenv": "^8.2.0",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
     "lodash": "^4.17.15",
